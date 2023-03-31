@@ -1,0 +1,22 @@
+{
+  "name": "auto-backup-almanac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "save": "esno ./scripts/save.ts",
+    "commit": "esno ./scripts/commit.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^18.15.11",
+    "axios": "^1.3.4",
+    "dayjs": "^1.11.7",
+    "esno": "^0.16.3",
+    "fs-extra": "^11.1.1",
+    "typescript": "^5.0.3"
+  }
+}
