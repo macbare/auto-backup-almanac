@@ -12,6 +12,6 @@ currentEmail !== email && exec(`git config user.email "${email}"`, { stdio: 'inh
 
 exec('git add .', { stdio: 'inherit' });
 
-exec(`git commit -m "backup from ${dayjs().format('YYYY-MM-DD')}"`, { stdio: 'inherit' })
+exec(`git commit -m "backup from ${dayjs().format('YYYY-MM-DD HH:mm:ss')}"`, { stdio: 'inherit' })
 
 exec('git push', { stdio: 'inherit' });

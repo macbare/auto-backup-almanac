@@ -10,7 +10,7 @@ ensureDirSync(backupPath);
 
 axios.get(url)
   .then(response => {
-    const dateStr = dayjs().format('YYYY-MM-DD');
+    const dateStr = dayjs().format('YYYY-MM-DD HH:mm:ss');
     const fileName = `${dateStr}.svg`;
     const filePath = resolve(backupPath, fileName);
     writeFile(filePath, response.data)
