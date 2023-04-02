@@ -3,7 +3,7 @@ import axios from 'axios';
 import { resolve } from 'path';
 import dayjs from 'dayjs';
 
-const url = 'https://almanac.baii.icu/api/almanac/picture';
+const url = `https://almanac.baii.icu/api/almanac/picture?time=${dayjs().format('YYYY-MM-DD')}`;
 const backupPath = resolve(__dirname, '../backup');
 
 ensureDirSync(backupPath);
